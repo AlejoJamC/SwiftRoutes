@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class SwiftroutesApplication
+class SwiftRoutesApplication
 
 fun main(args: Array<String>) {
-	runApplication<SwiftroutesApplication>(*args)
+	runApplication<SwiftRoutesApplication>(*args)
 }
