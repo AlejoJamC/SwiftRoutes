@@ -1,10 +1,8 @@
 package com.alejojamc.swiftroutes.domain.repository
 
-import com.alejojamc.swiftroutes.domain.model.DeliveryAgent
+import com.alejojamc.swiftroutes.domain.repository.record.DeliveryAgentRecord
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
 
-interface AgentRepository {
-    fun findById(id: String): DeliveryAgent?
-    fun findAll(): List<DeliveryAgent>
-    fun save(agent: DeliveryAgent)
-    fun deleteById(id: String)
-}
+@Repository
+interface AgentRepository: JpaRepository<DeliveryAgentRecord, String>
